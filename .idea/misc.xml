@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/tmp/GetGo/app/src/main/res/drawable/bg_circular_outlined_disabled.xml" value="0.5447916666666667" />
+        <entry key="..\:/tmp/GetGo/app/src/main/res/drawable/bg_rounded_filled_peter_river.xml" value="0.5447916666666667" />
+        <entry key="..\:/tmp/GetGo/app/src/main/res/drawable/bg_rounded_filled_primary.xml" value="0.5447916666666667" />
+        <entry key="..\:/tmp/GetGo/app/src/main/res/drawable/bg_rounded_light.xml" value="0.5447916666666667" />
+        <entry key="..\:/tmp/GetGo/app/src/main/res/drawable/bg_rounded_outlined_dark.xml" value="0.5447916666666667" />
+        <entry key="..\:/tmp/GetGo/app/src/main/res/drawable/divider_horizontal.xml" value="0.5447916666666667" />
+        <entry key="..\:/tmp/GetGo/app/src/main/res/drawable/dot_default.xml" value="0.5447916666666667" />
+        <entry key="..\:/tmp/GetGo/app/src/main/res/drawable/dot_selected.xml" value="0.5447916666666667" />
+        <entry key="..\:/tmp/GetGo/app/src/main/res/drawable/ic_address.xml" value="0.5447916666666667" />
+        <entry key="..\:/tmp/GetGo/app/src/main/res/drawable/ic_booking.xml" value="0.5447916666666667" />
+        <entry key="..\:/tmp/GetGo/app/src/main/res/drawable/ic_calendar.xml" value="0.5447916666666667" />
+        <entry key="..\:/tmp/GetGo/app/src/main/res/drawable/ic_car.xml" value="0.5447916666666667" />
+        <entry key="..\:/tmp/GetGo/app/src/main/res/drawable/ic_duration.xml" value="0.5447916666666667" />
+        <entry key="..\:/tmp/GetGo/app/src/main/res/drawable/ic_gift.xml" value="0.5447916666666667" />
+        <entry key="..\:/tmp/GetGo/app/src/main/res/drawable/ic_locate.xml" value="0.5447916666666667" />
+        <entry key="..\:/tmp/GetGo/app/src/main/res/drawable/ic_notification.xml" value="0.5447916666666667" />
+        <entry key="..\:/tmp/GetGo/app/src/main/res/drawable/ic_settings.xml" value="0.5447916666666667" />
+        <entry key="..\:/tmp/GetGo/app/src/main/res/drawable/selector_bottom_navigation_icon_state.xml" value="0.5447916666666667" />
+        <entry key="..\:/tmp/GetGo/app/src/main/res/drawable/selector_bottom_navigation_text_state.xml" value="0.5447916666666667" />
+        <entry key="..\:/tmp/GetGo/app/src/main/res/layout/activity_main.xml" value="0.5078125" />
+        <entry key="..\:/tmp/GetGo/app/src/main/res/layout/fragment_booking_details.xml" value="0.5244791666666667" />
+        <entry key="..\:/tmp/GetGo/app/src/main/res/layout/fragment_empty.xml" value="0.511322463768116" />
+        <entry key="..\:/tmp/GetGo/app/src/main/res/layout/fragment_rent_a_car.xml" value="0.5244791666666667" />
+        <entry key="..\:/tmp/GetGo/app/src/main/res/layout/fragment_search_results.xml" value="0.5244791666666667" />
+        <entry key="..\:/tmp/GetGo/app/src/main/res/layout/item_car_details.xml" value="0.5244791666666667" />
+        <entry key="..\:/tmp/GetGo/app/src/main/res/layout/item_car_found.xml" value="0.5244791666666667" />
+        <entry key="..\:/tmp/GetGo/app/src/main/res/layout/item_pager_indicator.xml" value="0.5244791666666667" />
+        <entry key="..\:/tmp/GetGo/app/src/main/res/layout/layout_booking_action_item.xml" value="0.5244791666666667" />
+        <entry key="..\:/tmp/GetGo/app/src/main/res/layout/layout_booking_actions.xml" value="0.5244791666666667" />
+        <entry key="..\:/tmp/GetGo/app/src/main/res/layout/layout_booking_date.xml" value="0.5244791666666667" />
+        <entry key="..\:/tmp/GetGo/app/src/main/res/layout/layout_booking_duration.xml" value="0.5244791666666667" />
+        <entry key="..\:/tmp/GetGo/app/src/main/res/layout/layout_booking_info.xml" value="0.5244791666666667" />
+        <entry key="..\:/tmp/GetGo/app/src/main/res/layout/layout_booking_pick_up.xml" value="0.5244791666666667" />
+        <entry key="..\:/tmp/GetGo/app/src/main/res/layout/layout_car_found.xml" value="0.5244791666666667" />
+        <entry key="..\:/tmp/GetGo/app/src/main/res/layout/layout_get_go.xml" value="0.5244791666666667" />
+        <entry key="..\:/tmp/GetGo/app/src/main/res/layout/layout_rent_a_car.xml" value="0.5244791666666667" />
+        <entry key="..\:/tmp/GetGo/app/src/main/res/layout/layout_rent_info.xml" value="0.5244791666666667" />
+        <entry key="..\:/tmp/GetGo/app/src/main/res/layout/layout_rounded_photo.xml" value="0.5244791666666667" />
+        <entry key="..\:/tmp/GetGo/app/src/main/res/layout/layout_search_results.xml" value="0.5244791666666667" />
+        <entry key="..\:/tmp/GetGo/app/src/main/res/layout/layout_square_image.xml" value="0.5244791666666667" />
+        <entry key="..\:/tmp/GetGo/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.5244791666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

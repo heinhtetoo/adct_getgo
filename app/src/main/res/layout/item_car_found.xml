@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="@dimen/margin_medium_2">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.34" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/white"
+        android:scaleType="fitCenter"
+        android:src="@drawable/mazda3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/CircleImageViewShape8" />
+
+    <TextView
+        android:id="@+id/tv_model"
+        style="@style/Text.Bold.18"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:textColor="@color/complementary_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Mazda 3" />
+
+    <TextView
+        android:id="@+id/tv_plate_number"
+        style="@style/Text.Regular.14"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxEms="6"
+        android:maxLines="1"
+        android:paddingStart="@dimen/margin_medium_2"
+        android:paddingTop="0dp"
+        android:paddingEnd="@dimen/margin_small"
+        android:paddingBottom="@dimen/margin_tiny"
+        android:textColor="@color/complementary_text"
+        app:layout_constraintStart_toEndOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/tv_model"
+        tools:text="SMS1000Z" />
+
+    <ImageView
+        android:id="@+id/iv_divider"
+        android:layout_width="3dp"
+        android:layout_height="3dp"
+        android:contentDescription="@string/image_description"
+        android:src="@drawable/ic_dot"
+        app:layout_constraintBottom_toBottomOf="@id/tv_plate_number"
+        app:layout_constraintStart_toEndOf="@id/tv_plate_number"
+        app:layout_constraintTop_toTopOf="@id/tv_plate_number"
+        app:tint="@color/deeppink" />
+
+    <TextView
+        android:id="@+id/tv_type"
+        style="@style/Text.Regular.14"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingStart="@dimen/margin_small"
+        android:paddingTop="@dimen/margin_tiny"
+        android:paddingEnd="@dimen/margin_medium_2"
+        android:paddingBottom="@dimen/margin_tiny"
+        android:textColor="@color/complementary_text"
+        app:layout_constraintBottom_toBottomOf="@id/tv_plate_number"
+        app:layout_constraintEnd_toStartOf="@id/tv_distance"
+        app:layout_constraintStart_toEndOf="@id/iv_divider"
+        app:layout_constraintTop_toTopOf="@id/tv_plate_number"
+        tools:text="5 Seater" />
+
+    <TextView
+        android:id="@+id/tv_distance"
+        style="@style/Text.Bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_rounded_outlined_primary_light"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingStart="@dimen/margin_small"
+        android:paddingTop="@dimen/margin_tiny"
+        android:paddingEnd="@dimen/margin_small"
+        android:paddingBottom="@dimen/margin_tiny"
+        android:textAllCaps="true"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/text_tiny"
+        app:layout_constraintBottom_toBottomOf="@id/tv_plate_number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_plate_number"
+        tools:text="0.5KM AWAY" />
+
+    <TextView
+        android:id="@+id/tv_title_rental_fee"
+        style="@style/Text.Bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingStart="@dimen/margin_medium_2"
+        android:paddingTop="@dimen/margin_small"
+        android:paddingEnd="@dimen/margin_small"
+        android:paddingBottom="0dp"
+        android:text="@string/rental_fee"
+        android:textColor="@color/white_text_opacity_5"
+        android:textSize="@dimen/text_small"
+        app:layout_constraintEnd_toStartOf="@id/tv_title_mileage_fee"
+        app:layout_constraintStart_toEndOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/tv_plate_number" />
+
+    <TextView
+        android:id="@+id/tv_title_mileage_fee"
+        style="@style/Text.Bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingStart="@dimen/margin_medium_2"
+        android:paddingTop="@dimen/margin_small"
+        android:paddingEnd="@dimen/margin_small"
+        android:paddingBottom="0dp"
+        android:text="@string/mileage_fee"
+        android:textColor="@color/white_text_opacity_5"
+        android:textSize="@dimen/text_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv_rental_fee"
+        app:layout_constraintTop_toBottomOf="@id/tv_plate_number" />
+
+    <TextView
+        android:id="@+id/tv_rental_fee"
+        style="@style/Text.Regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:minEms="6"
+        android:paddingStart="@dimen/margin_medium_2"
+        android:paddingTop="0dp"
+        android:paddingEnd="@dimen/margin_small"
+        android:paddingBottom="@dimen/margin_tiny"
+        android:textColor="@color/complementary_text"
+        app:layout_constraintStart_toEndOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_rental_fee"
+        tools:text="Fr.$3.00/hr" />
+
+    <TextView
+        android:id="@+id/tv_mileage_fee"
+        style="@style/Text.Regular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:paddingStart="@dimen/margin_medium_2"
+        android:paddingTop="0dp"
+        android:paddingEnd="@dimen/margin_small"
+        android:paddingBottom="@dimen/margin_tiny"
+        android:textColor="@color/complementary_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_title_mileage_fee"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_rental_fee"
+        tools:text="$0.40/km" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

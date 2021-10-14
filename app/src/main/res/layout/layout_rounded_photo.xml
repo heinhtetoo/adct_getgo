@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_rounded_photo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/margin_small">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/image_description"
+        android:scaleType="centerCrop"
+        android:src="@drawable/parking"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/CircleImageViewShape8" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_rounded_outlined_dark"
+        android:gravity="center"
+        android:text="+10"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_regular_2x"
+        app:layout_constraintBottom_toBottomOf="@id/iv_thumbnail"
+        app:layout_constraintEnd_toEndOf="@id/iv_thumbnail"
+        app:layout_constraintStart_toStartOf="@id/iv_thumbnail"
+        app:layout_constraintTop_toTopOf="@id/iv_thumbnail" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

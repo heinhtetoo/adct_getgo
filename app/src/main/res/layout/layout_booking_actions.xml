@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_booking_actions"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/margin_medium_2">
+
+    <TextView
+        android:id="@+id/tv_title_estimated_total"
+        style="@style/Text.Bold.14"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:paddingStart="0dp"
+        android:paddingTop="@dimen/margin_medium_2"
+        android:paddingEnd="@dimen/margin_medium_2"
+        android:paddingBottom="0dp"
+        android:text="@string/estimated_total"
+        android:textColor="@color/primary_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_sub_title_estimated_total"
+        style="@style/Text.Regular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:paddingStart="0dp"
+        android:paddingTop="0dp"
+        android:paddingEnd="@dimen/margin_medium_2"
+        android:text="@string/amount_is_not_final"
+        android:textColor="@color/disabled_text"
+        android:textSize="@dimen/text_small"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_estimated_total" />
+
+    <TextView
+        android:id="@+id/tv_estimated_total"
+        style="@style/Text.Bold.14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:paddingStart="0dp"
+        android:paddingTop="0dp"
+        android:paddingEnd="@dimen/margin_small"
+        android:paddingBottom="0dp"
+        android:text="@string/sample_total"
+        android:textColor="@color/primary_text"
+        app:layout_constraintBottom_toBottomOf="@id/tv_sub_title_estimated_total"
+        app:layout_constraintEnd_toStartOf="@id/btn_next"
+        app:layout_constraintTop_toTopOf="@id/tv_title_estimated_total" />
+
+    <ImageButton
+        android:id="@+id/btn_next"
+        android:layout_width="@dimen/icon_button_small"
+        android:layout_height="@dimen/icon_button_small"
+        android:background="?attr/actionBarItemBackground"
+        android:contentDescription="@string/icon_description"
+        android:src="@drawable/ic_next"
+        app:layout_constraintBottom_toBottomOf="@id/tv_sub_title_estimated_total"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_title_estimated_total"
+        app:tint="@color/primary_text" />
+
+    <View
+        android:id="@+id/divider_top"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"
+        app:layout_constraintTop_toBottomOf="@id/tv_sub_title_estimated_total" />
+
+    <TextView
+        android:id="@+id/tv_need_help"
+        style="@style/Text.Bold.14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="0dp"
+        android:paddingTop="@dimen/margin_medium_2"
+        android:paddingEnd="0dp"
+        android:paddingBottom="@dimen/margin_medium_2"
+        android:text="@string/need_help"
+        android:textColor="@color/primary_text"
+        app:drawableEndCompat="@drawable/ic_help"
+        app:layout_constraintTop_toBottomOf="@id/divider_top" />
+
+    <View
+        android:id="@+id/divider_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"
+        app:layout_constraintTop_toBottomOf="@id/tv_need_help" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        style="@style/Text.Bold.14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="0dp"
+        android:paddingTop="@dimen/margin_medium_2"
+        android:paddingEnd="0dp"
+        android:paddingBottom="@dimen/margin_medium_2"
+        android:text="@string/cancel_this_booking"
+        android:textColor="@color/primary_text"
+        app:drawableEndCompat="@drawable/ic_cancel"
+        app:layout_constraintTop_toBottomOf="@id/divider_bottom" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_booking_pick_up"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/margin_medium_2">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.36" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/Text.Bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pick_up_car_at"
+        android:textColor="@color/deeppink"
+        android:textSize="@dimen/text_regular_3x"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/margin_medium_2"
+        android:background="@color/flat_clouds"
+        app:layout_constraintBottom_toBottomOf="@id/ll_photos"
+        app:layout_constraintEnd_toStartOf="@id/guideline"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/image_description"
+        android:scaleType="centerCrop"
+        android:src="@drawable/map"
+        app:layout_constraintBottom_toBottomOf="@id/map"
+        app:layout_constraintEnd_toEndOf="@id/map"
+        app:layout_constraintStart_toStartOf="@id/map"
+        app:layout_constraintTop_toTopOf="@id/map" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        style="@style/Text.Bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:paddingBottom="@dimen/margin_tiny"
+        android:text="@string/sample_car_park"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_regular_2_5x"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_sub_address"
+        style="@style/Text.Regular.14"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:paddingTop="0dp"
+        android:text="@string/sample_car_lot"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_regular_2x"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_address"
+        app:layout_constraintTop_toBottomOf="@id/tv_address" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_get_directions"
+        style="@style/ActionButton.Outlined"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:paddingHorizontal="@dimen/margin_medium"
+        android:text="@string/get_directions"
+        android:textSize="@dimen/text_small"
+        android:textStyle="bold"
+        app:icon="@drawable/ic_get_directions"
+        app:iconGravity="textStart"
+        app:layout_constraintStart_toStartOf="@id/tv_address"
+        app:layout_constraintTop_toBottomOf="@id/tv_sub_address" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/ll_photos"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="@dimen/margin_medium_1"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:weightSum="4"
+        app:layout_constraintDimensionRatio="H, 4:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/btn_get_directions">
+
+        <include
+            android:id="@+id/photo_one"
+            layout="@layout/layout_rounded_photo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <include
+            android:id="@+id/photo_two"
+            layout="@layout/layout_rounded_photo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <include
+            android:id="@+id/photo_three"
+            layout="@layout/layout_rounded_photo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <include
+            android:id="@+id/photo_four"
+            layout="@layout/layout_rounded_photo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

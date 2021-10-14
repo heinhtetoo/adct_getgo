@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#011851</color>
+    <color name="colorPrimaryDark">#000029</color>
+    <color name="colorPrimaryLight">#393E7E</color>
+    <color name="colorAccent">#15F9B9</color>
+    <color name="colorAccentDark">#00C589</color>
+    <color name="colorAccentLight">#6FFFEB</color>
+
+    <color name="deeppink">#FF2287</color>
+    <color name="dodgerblue">#1076ff</color>
+
+    <color name="colorPrimary300">#46bab9</color>
+
+    <!--<color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#FFFFFF</color>-->
+
+    <color name="colorStatusBarIcon">#FFFFFF</color>
+    <color name="colorStatusBar">@color/colorPrimary</color>
+
+    <color name="colorToolbar">@color/colorPrimary</color>
+
+    <color name="colorTabBar">@color/colorPrimary</color>
+    <color name="colorTabIndicator">@color/colorPrimary</color>
+
+    <color name="colorCircleBorder">@color/colorPrimary</color>
+
+    <color name="colorNotificationBar">@color/colorPrimary</color>
+
+    <color name="colorIconTint">#121212</color>
+
+    <color name="colorUnreadNotificationLightTint">#11FFA082</color>
+
+    <color name="colorDimPrimary">#614A00</color>
+    <color name="colorDimBackground">#99000000</color>
+    <color name="colorDefaultBackground">#E5E5E5</color>
+    <color name="colorSurface">#EEEEEE</color>
+    <color name="colorSurfaceDark">@color/colorDefaultBackground</color>
+    <color name="colorOnSurface">#1B1B1B</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="white100">#FAFAFA</color>
+    <color name="black">#121212</color>
+
+    <color name="primary_text">#121212</color>
+    <color name="secondary_text">#808080</color>
+    <color name="caption_text">#1F1F1F</color>
+    <color name="complementary_text">@color/colorDefaultBackground</color>
+    <color name="primary_dark_text">@color/colorPrimaryDark</color>
+    <color name="accent_text">#FFD41F</color>
+    <color name="hint_text">#808080</color>
+    <color name="disabled_text">#808080</color>
+    <color name="dark_background">#282828</color>
+    <color name="white_text">#FFFFFF</color>
+    <color name="white_text_opacity_2_5">#CCFFFFFF</color>
+    <color name="white_text_opacity_5">#88FFFFFF</color>
+    <color name="white_text_opacity_7_5">#44FFFFFF</color>
+
+    <color name="icons">#121212</color>
+    <color name="icons_light">#121212</color>
+    <color name="icons_notification">#FFD41F</color>
+
+    <color name="disabled_border">#D4DADF</color>
+    <color name="divider">#22BDBDBD</color>
+    <color name="navDivider">#f0f0f0</color>
+    <color name="recycler_divider">#1F1F1F</color>
+    <color name="pull_to_refresh_background">#E5E5E5</color>
+    <color name="shimmering_background">#b0b0b0</color>
+    <color name="shimmering_highlight">#b0b0b0</color>
+    <color name="background_input_text">#22BDBDBD</color>
+    <color name="background_white_input_text">#30ffffff</color>
+    <color name="background_image_button">#22BDBDBD</color>
+    <color name="opaqued_status_bar">#44101010</color>
+
+    <color name="flat_turquoise">#1ABC9C</color>
+    <color name="flat_emerald">#2ECC71</color>
+    <color name="flat_peter_river">#3498DB</color>
+    <color name="flat_amethyst">#9B59B6</color>
+    <color name="flat_wet_asphalt">#34495E</color>
+    <color name="flat_sunflower">#F1C40F</color>
+    <color name="flat_carrot">#E67E22</color>
+    <color name="flat_alizarin">#E74C3C</color>
+    <color name="flat_clouds">#ECF0F1</color>
+    <color name="flat_concrete">#95A5A6</color>
+
+    <color name="correct">#00C853</color>
+    <color name="wrong">#CCFF0000</color>
+
+    <color name="colorBlack600_alpha_50">#80555555</color>
+
+    <color name="colorBlack_65">#996D6D6D</color>
+    <color name="colorBlack_30">#A6121212</color>
+
+    <color name="iconColor700">#505050</color>
+    <color name="colorWhite_alpha_80">#CCffffff</color>
+    <color name="colorWhite_alpha_40">#66ffffff</color>
+    <color name="colorWhite300">#f0f0f0</color>
+
+    <color name="colorSuccess">#4BB543</color>
+    <color name="chipBorderColor">#434343</color>
+    <color name="colorSecondaryBackground">#f0f0f0</color>
+
+</resources>

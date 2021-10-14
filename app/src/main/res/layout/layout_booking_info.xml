@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_booking_info"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_model"
+        style="@style/Text.Bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="0dp"
+        android:text="@string/sample_model"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_heading_2x"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_plate_number"
+        style="@style/Text.Bold.18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:text="@string/sample_plate_number"
+        android:textColor="@color/primary_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_model" />
+
+    <TextView
+        android:id="@+id/tv_status"
+        style="@style/Text.Regular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_rounded_filled_dodger_blue"
+        android:paddingStart="@dimen/margin_tiny"
+        android:paddingTop="@dimen/margin_tiny"
+        android:paddingEnd="@dimen/margin_tiny"
+        android:paddingBottom="@dimen/margin_tiny"
+        android:text="@string/confirmed"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_small"
+        app:layout_constraintBottom_toBottomOf="@id/tv_plate_number"
+        app:layout_constraintStart_toEndOf="@id/tv_plate_number"
+        app:layout_constraintTop_toTopOf="@id/tv_plate_number" />
+
+    <include
+        android:id="@+id/layout_start_date"
+        layout="@layout/layout_booking_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium"
+        app:layout_constraintEnd_toStartOf="@id/layout_end_date"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_plate_number" />
+
+    <include
+        android:id="@+id/layout_end_date"
+        layout="@layout/layout_booking_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/layout_start_date"
+        app:layout_constraintEnd_toStartOf="@id/layout_booking_duration"
+        app:layout_constraintStart_toEndOf="@id/layout_start_date"
+        app:layout_constraintTop_toTopOf="@id/layout_start_date" />
+
+    <include
+        android:id="@+id/layout_booking_duration"
+        layout="@layout/layout_booking_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_medium_2"
+        app:layout_constraintBottom_toBottomOf="@id/layout_start_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/layout_end_date"
+        app:layout_constraintTop_toTopOf="@id/layout_start_date" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_add_to_calendar"
+        style="@style/ActionButton.Outlined"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:paddingHorizontal="0dp"
+        android:text="@string/add_to_calendar"
+        android:textSize="@dimen/text_small"
+        android:textStyle="bold"
+        app:icon="@drawable/ic_add"
+        app:iconGravity="textStart"
+        app:layout_constraintEnd_toStartOf="@id/btn_extend"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_start_date" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_extend"
+        style="@style/ActionButton.Outlined"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_small"
+        android:paddingHorizontal="0dp"
+        android:text="@string/extend"
+        android:textSize="@dimen/text_small"
+        android:textStyle="bold"
+        app:icon="@drawable/ic_extend"
+        app:iconGravity="textStart"
+        app:iconPadding="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/btn_add_to_calendar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_add_to_calendar"
+        app:layout_constraintTop_toTopOf="@id/btn_add_to_calendar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_car_details"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_medium_2"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintDimensionRatio="H, 2:1"
+        app:layout_constraintTop_toBottomOf="@id/btn_add_to_calendar"
+        tools:itemCount="3"
+        tools:listitem="@layout/item_car_details" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rv_car_details"
+        tools:itemCount="2"
+        tools:listitem="@layout/item_pager_indicator" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

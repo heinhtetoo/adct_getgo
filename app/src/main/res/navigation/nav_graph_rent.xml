@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_rent"
+    app:startDestination="@id/rentACarFragment">
+
+    <fragment
+        android:id="@+id/rentACarFragment"
+        android:name="com.heinhtetoo.getgo.ui.RentACarFragment"
+        android:label="@string/tab_rent_a_car"
+        tools:layout="@layout/fragment_rent_a_car">
+        <action
+            android:id="@+id/action_rentACarFragment_to_searchResultsFragment"
+            app:destination="@id/searchResultsFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchResultsFragment"
+        android:name="com.heinhtetoo.getgo.ui.SearchResultsFragment"
+        android:label="@string/search_results"
+        tools:layout="@layout/fragment_search_results">
+        <action
+            android:id="@+id/action_searchResultsFragment_to_bookingDetailsFragment"
+            app:destination="@id/bookingDetailsFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popEnterAnim="@android:anim/fade_in"
+            app:popExitAnim="@android:anim/fade_out" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/bookingDetailsFragment"
+        android:name="com.heinhtetoo.getgo.ui.BookingDetailsFragment"
+        android:label="@string/booking_details"
+        tools:layout="@layout/fragment_booking_details" />
+
+</navigation>

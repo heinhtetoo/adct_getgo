@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_booking_duration"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_rounded_filled_primary">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/Text.Bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="0dp"
+        android:text="@string/duration"
+        android:textColor="@color/white_text_opacity_5"
+        android:textSize="@dimen/text_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_days"
+        style="@style/Text.Regular.18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLength="2"
+        android:paddingStart="@dimen/margin_medium_2"
+        android:paddingTop="0dp"
+        android:paddingEnd="@dimen/margin_medium"
+        android:paddingBottom="0dp"
+        android:text="@string/sample_days"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+    <TextView
+        android:id="@+id/tv_days_hours_separator"
+        style="@style/Text.Regular.18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLength="2"
+        android:paddingStart="0dp"
+        android:paddingTop="0dp"
+        android:paddingEnd="0dp"
+        android:paddingBottom="0dp"
+        android:text="@string/days_hours_separator"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/tv_days"
+        app:layout_constraintStart_toEndOf="@id/tv_days"
+        app:layout_constraintTop_toTopOf="@id/tv_days" />
+
+    <TextView
+        android:id="@+id/tv_hours"
+        style="@style/Text.Regular.18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLength="2"
+        android:paddingStart="@dimen/margin_medium"
+        android:paddingTop="0dp"
+        android:paddingEnd="@dimen/margin_medium_2"
+        android:paddingBottom="0dp"
+        android:text="@string/sample_hours"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/tv_days"
+        app:layout_constraintStart_toEndOf="@id/tv_days_hours_separator"
+        app:layout_constraintTop_toTopOf="@id/tv_days" />
+
+    <TextView
+        android:id="@+id/tv_title_days"
+        style="@style/Text.Regular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="end|center_vertical"
+        android:paddingStart="0dp"
+        android:paddingTop="0dp"
+        android:paddingEnd="@dimen/margin_medium"
+        android:paddingBottom="@dimen/margin_medium"
+        android:text="@string/days"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_tiny"
+        app:layout_constraintEnd_toEndOf="@id/tv_days"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_days" />
+
+    <TextView
+        android:id="@+id/tv_title_hours"
+        style="@style/Text.Regular"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start|center_vertical"
+        android:paddingStart="@dimen/margin_medium"
+        android:paddingTop="0dp"
+        android:paddingEnd="0dp"
+        android:paddingBottom="@dimen/margin_medium"
+        android:text="@string/hours"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_tiny"
+        app:layout_constraintEnd_toEndOf="@id/tv_hours"
+        app:layout_constraintStart_toStartOf="@id/tv_hours"
+        app:layout_constraintTop_toBottomOf="@id/tv_days" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

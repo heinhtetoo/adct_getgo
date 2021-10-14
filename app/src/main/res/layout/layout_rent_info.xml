@@ -1,0 +1,153 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout_rent_info"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_location"
+        android:layout_width="@dimen/icon_medium_4"
+        android:layout_height="@dimen/icon_medium_4"
+        android:contentDescription="@string/icon_description"
+        android:scaleType="center"
+        android:src="@drawable/ic_address"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_title_location"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:text="@string/location"
+        android:textColor="@color/disabled_text"
+        android:textSize="@dimen/text_small"
+        app:layout_constraintBottom_toTopOf="@id/tv_current_location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_location"
+        app:layout_constraintTop_toTopOf="@id/iv_location"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/tv_current_location"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:text="@string/current_location"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_regular_2x"
+        app:layout_constraintBottom_toBottomOf="@id/iv_location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/iv_location"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_location" />
+
+    <View
+        android:id="@+id/divider_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/disabled_border"
+        app:layout_constraintTop_toBottomOf="@id/iv_location" />
+
+    <ImageView
+        android:id="@+id/iv_date"
+        android:layout_width="@dimen/icon_medium_4"
+        android:layout_height="@dimen/icon_medium_4"
+        android:contentDescription="@string/icon_description"
+        android:scaleType="center"
+        android:src="@drawable/ic_calendar"
+        app:layout_constraintEnd_toStartOf="@id/tv_title_date"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/divider_horizontal" />
+
+    <TextView
+        android:id="@+id/tv_title_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:text="@string/date_time"
+        android:textColor="@color/disabled_text"
+        android:textSize="@dimen/text_small"
+        app:layout_constraintBottom_toTopOf="@id/tv_now"
+        app:layout_constraintEnd_toStartOf="@id/divider_vertical"
+        app:layout_constraintStart_toEndOf="@id/iv_date"
+        app:layout_constraintTop_toTopOf="@id/iv_date"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/tv_now"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:text="@string/now"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_regular_2x"
+        app:layout_constraintBottom_toBottomOf="@id/iv_date"
+        app:layout_constraintEnd_toStartOf="@id/divider_vertical"
+        app:layout_constraintStart_toEndOf="@id/iv_date"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_date" />
+
+    <View
+        android:id="@+id/divider_vertical"
+        android:layout_width="@dimen/divider_height"
+        android:layout_height="0dp"
+        android:background="@color/disabled_border"
+        app:layout_constraintBottom_toBottomOf="@id/iv_date"
+        app:layout_constraintEnd_toStartOf="@id/iv_duration"
+        app:layout_constraintStart_toEndOf="@id/tv_title_date"
+        app:layout_constraintTop_toTopOf="@id/iv_date" />
+
+    <ImageView
+        android:id="@+id/iv_duration"
+        android:layout_width="@dimen/icon_medium_4"
+        android:layout_height="@dimen/icon_medium_4"
+        android:contentDescription="@string/icon_description"
+        android:scaleType="center"
+        android:src="@drawable/ic_duration"
+        app:layout_constraintEnd_toStartOf="@id/tv_title_duration"
+        app:layout_constraintStart_toEndOf="@id/divider_vertical"
+        app:layout_constraintTop_toBottomOf="@id/divider_horizontal" />
+
+    <TextView
+        android:id="@+id/tv_title_duration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:text="@string/duration"
+        android:textColor="@color/disabled_text"
+        android:textSize="@dimen/text_small"
+        app:layout_constraintBottom_toTopOf="@id/tv_time"
+        app:layout_constraintEnd_toStartOf="@id/tv_go"
+        app:layout_constraintStart_toEndOf="@id/iv_duration"
+        app:layout_constraintTop_toTopOf="@id/iv_duration"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:text="@string/one_hour"
+        android:textColor="@color/primary_text"
+        android:textSize="@dimen/text_regular_2x"
+        app:layout_constraintBottom_toBottomOf="@id/iv_duration"
+        app:layout_constraintEnd_toStartOf="@id/tv_go"
+        app:layout_constraintStart_toEndOf="@id/iv_duration"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_duration" />
+
+    <TextView
+        android:id="@+id/tv_go"
+        style="@style/Text.Bold.18"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="@string/go"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="@id/iv_date"
+        app:layout_constraintDimensionRatio="W, 1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_date" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
