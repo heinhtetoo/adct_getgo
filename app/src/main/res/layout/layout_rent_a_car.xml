@@ -27,6 +27,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/margin_medium"
         android:paddingVertical="@dimen/margin_medium_2"
+        android:paddingStart="0dp"
+        android:paddingEnd="@dimen/margin_medium_2"
         android:text="@string/tab_rent_a_car"
         android:textColor="@color/deeppink"
         android:textSize="@dimen/text_heading_1_5x"
